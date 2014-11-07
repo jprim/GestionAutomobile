@@ -13,3 +13,5 @@ M:\maden\GestionAutomobile\presentation\obj\Debug\presentation.pdb
 M:\Jennifer\GestionAutomobile\GestionAutomobile\presentation\bin\Debug\presentation.exe.config
 M:\Jennifer\GestionAutomobile\GestionAutomobile\presentation\obj\Debug\presentation.exe
 M:\Jennifer\GestionAutomobile\GestionAutomobile\presentation\obj\Debug\presentation.pdb
+M:\Jennifer\GestionAutomobile\presentation\obj\Debug\presentation.exe
+M:\Jennifer\GestionAutomobile\presentation\obj\Debug\presentation.pdb
