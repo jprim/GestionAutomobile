@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassLibrary1
+namespace Utilitaire.TextBox
 {
-    class Voiture
+    class Saisie
     {
     }
 }
