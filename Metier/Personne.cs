@@ -9,5 +9,6 @@ namespace Metier
     class Personne
     {
         private String test3;
+        private String test4;
     }
 }
