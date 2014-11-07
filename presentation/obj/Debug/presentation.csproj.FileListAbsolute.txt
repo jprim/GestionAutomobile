@@ -15,3 +15,9 @@ M:\Jennifer\GestionAutomobile\GestionAutomobile\presentation\obj\Debug\presentat
 M:\Jennifer\GestionAutomobile\GestionAutomobile\presentation\obj\Debug\presentation.pdb
 M:\Jennifer\GestionAutomobile\presentation\obj\Debug\presentation.exe
 M:\Jennifer\GestionAutomobile\presentation\obj\Debug\presentation.pdb
+M:\GestionAutomobile\presentation\obj\Debug\presentation.exe
+M:\GestionAutomobile\presentation\obj\Debug\presentation.pdb
+M:\GestionAutomobile\presentation\obj\Debug\Presentation.csprojResolveAssemblyReference.cache
+M:\GestionAutomobile\presentation\obj\Debug\presentation.Forms.FrmAccueil.resources
+M:\GestionAutomobile\presentation\obj\Debug\presentation.Properties.Resources.resources
+M:\GestionAutomobile\presentation\obj\Debug\Presentation.csproj.GenerateResource.Cache

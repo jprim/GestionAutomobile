@@ -50,8 +50,77 @@
     <Compile Include="Forms\FrmAccueil.Designer.cs">
       <DependentUpon>FrmAccueil.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ressources\Program.cs" />
+    <Compile Include="Forms\FrmAjouterPersonne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAjouterPersonne.Designer.cs">
+      <DependentUpon>FrmAjouterPersonne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmAjouterVoiture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAjouterVoiture.Designer.cs">
+      <DependentUpon>FrmAjouterVoiture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmConsulterPersonnes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmConsulterPersonnes.Designer.cs">
+      <DependentUpon>FrmConsulterPersonnes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmConsulterVoitures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmConsulterVoitures.Designer.cs">
+      <DependentUpon>FrmConsulterVoitures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmLouerVoiture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmLouerVoiture.Designer.cs">
+      <DependentUpon>FrmLouerVoiture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmRendreVoiture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmRendreVoiture.Designer.cs">
+      <DependentUpon>FrmRendreVoiture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSupprimerPersonne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSupprimerPersonne.Designer.cs">
+      <DependentUpon>FrmSupprimerPersonne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSupprimerVoiture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSupprimerVoiture.Designer.cs">
+      <DependentUpon>FrmSupprimerVoiture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FrmAccueil.resx">
+      <DependentUpon>FrmAccueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAjouterPersonne.resx">
+      <DependentUpon>FrmAjouterPersonne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAjouterVoiture.resx">
+      <DependentUpon>FrmAjouterVoiture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmConsulterPersonnes.resx">
+      <DependentUpon>FrmConsulterPersonnes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmConsulterVoitures.resx">
+      <DependentUpon>FrmConsulterVoitures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmLouerVoiture.resx">
+      <DependentUpon>FrmLouerVoiture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmRendreVoiture.resx">
+      <DependentUpon>FrmRendreVoiture.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -70,6 +139,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Ressources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,4 @@
+M:\GestionAutomobile\Metier\bin\Debug\Metier.dll
+M:\GestionAutomobile\Metier\bin\Debug\Metier.pdb
+M:\GestionAutomobile\Metier\obj\Debug\Metier.dll
+M:\GestionAutomobile\Metier\obj\Debug\Metier.pdb
