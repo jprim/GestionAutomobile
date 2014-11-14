@@ -85,7 +85,6 @@
             this.tbx_ajoutPersonne_nom.Name = "tbx_ajoutPersonne_nom";
             this.tbx_ajoutPersonne_nom.Size = new System.Drawing.Size(255, 20);
             this.tbx_ajoutPersonne_nom.TabIndex = 4;
-            this.tbx_ajoutPersonne_nom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nb_KeyPress);
             // 
             // tbx_ajoutPersonne_prenom
             // 

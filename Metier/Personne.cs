@@ -2,10 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Xml.Serialization;
+using System.Runtime.Serialization.Json;
+using System.Runtime.Serialization;
 
 namespace Metier
 {
+    [DataContract]
+    [Serializable]
+    [XmlRoot("Personne", Namespace = "", IsNullable = false)]
     class Personne
     {
         #region Attribut
@@ -14,14 +19,16 @@ namespace Metier
         private String ville;
 
         #endregion
-
+        #region Getters And Setters
+        [DataMember]
+        [XmlElement("Nom")]
         public String Nom
         {
             get { return nom; }
             set { nom = value; }
         }
-
-        #region Getters And Setters
+        [DataMember]
+        [XmlElement("Prenom")]
         public String Prenom
         {
             get { return prenom; }

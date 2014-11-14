@@ -63,7 +63,6 @@
             this.tbx_ajouttbx_ajoutVoiture_annee.Name = "tbx_ajouttbx_ajoutVoiture_annee";
             this.tbx_ajouttbx_ajoutVoiture_annee.Size = new System.Drawing.Size(255, 20);
             this.tbx_ajouttbx_ajoutVoiture_annee.TabIndex = 15;
-            this.tbx_ajouttbx_ajoutVoiture_annee.TextChanged += new System.EventHandler(this.tbx_ajouttbx_ajoutVoiture_annee_TextChanged);
             // 
             // tbx_ajoutVoiture_immatriculation
             // 

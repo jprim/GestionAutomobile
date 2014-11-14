@@ -2,41 +2,48 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Xml.Serialization;
+using System.Runtime.Serialization.Json;
+using System.Runtime.Serialization;
+
 
 namespace Metier
 {
     /// <summary>
     /// Classe Angence
     /// </summary>
+    [DataContract]
+    [Serializable]
+    [XmlRoot("Agence", Namespace = "", IsNullable = false)]
     class Agence
     {
         #region Attributs
         private string nom;
-
-
         private List<Voiture> parcVoitures;
-
-
         private List<Personne> lesPersonnes;
-
-       
         #endregion
 
         #region Getters And Setters
+        [DataMember]
+        [XmlElement("Nom")]
         public string Nom
         {
             get { return nom; }
             set { nom = value; }
         }
-
-        internal List<Voiture> ParcVoitures
+        [DataMember]
+        [XmlArray("ParcVoiture")]
+        [XmlArrayItem("Voiture", typeof(Voiture))]
+        public  List<Voiture> ParcVoitures
         {
             get { return parcVoitures; }
             set { parcVoitures = value; }
         }
 
-        internal List<Personne> LesPersonnes
+        [DataMember]
+        [XmlArray("LesPersonnes")]
+        [XmlArrayItem("Personne", typeof(Personne))]
+        public List<Personne> LesPersonnes
         {
             get { return lesPersonnes; }
             set { lesPersonnes = value; }
@@ -89,7 +96,7 @@ namespace Metier
         /// <param name="personne">La personne qui loue la voiture</param>
         public void LouerVoiture(Voiture voiture, Personne personne)
         {
-            voiture.Loueur = personne;
+            voiture.Loueur = personne.Nom;
             voiture.EstLouee = true;
         }
         /// <summary>

@@ -2,3 +2,6 @@ M:\GestionAutomobile\Metier\bin\Debug\Metier.dll
 M:\GestionAutomobile\Metier\bin\Debug\Metier.pdb
 M:\GestionAutomobile\Metier\obj\Debug\Metier.dll
 M:\GestionAutomobile\Metier\obj\Debug\Metier.pdb
+M:\mcuer\GestionAutomobile\Metier\obj\Debug\Metier.csprojResolveAssemblyReference.cache
+M:\mcuer\GestionAutomobile\Metier\obj\Debug\Metier.dll
+M:\mcuer\GestionAutomobile\Metier\obj\Debug\Metier.pdb
