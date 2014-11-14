@@ -34,3 +34,5 @@ M:\mcuer\GestionAutomobile\presentation\obj\Debug\presentation.Properties.Resour
 M:\mcuer\GestionAutomobile\presentation\obj\Debug\Presentation.csproj.GenerateResource.Cache
 M:\mcuer\GestionAutomobile\presentation\obj\Debug\presentation.exe
 M:\mcuer\GestionAutomobile\presentation\obj\Debug\presentation.pdb
+M:\mcuer\GestionAutomobilev2\presentation\obj\Debug\presentation.exe
+M:\mcuer\GestionAutomobilev2\presentation\obj\Debug\presentation.pdb

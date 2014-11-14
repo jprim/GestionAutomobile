@@ -8,6 +8,6 @@ namespace Utilitaire.TextBox
 {
     class Saisie
     {
-        string essai; 
+        string essaie; 
     }
 }
