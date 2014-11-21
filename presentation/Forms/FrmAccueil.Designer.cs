@@ -46,6 +46,8 @@
             this.toutesLesVoituresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toutesLesPersonnesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.importerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exporterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -65,6 +67,8 @@
             // fichierToolStripMenuItem
             // 
             this.fichierToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.importerToolStripMenuItem,
+            this.exporterToolStripMenuItem,
             this.quitterToolStripMenuItem});
             this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
             this.fichierToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
@@ -93,7 +97,7 @@
             this.ajouterUneVoitureToolStripMenuItem,
             this.supprimerUneVoitureToolStripMenuItem});
             this.voitureToolStripMenuItem.Name = "voitureToolStripMenuItem";
-            this.voitureToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.voitureToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.voitureToolStripMenuItem.Text = "Voitures";
             // 
             // ajouterUneVoitureToolStripMenuItem
@@ -116,7 +120,7 @@
             this.ajouterUneVoitureToolStripMenuItem1,
             this.supprimerUneVoitureToolStripMenuItem1});
             this.personnesToolStripMenuItem.Name = "personnesToolStripMenuItem";
-            this.personnesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.personnesToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.personnesToolStripMenuItem.Text = "Personnes";
             // 
             // ajouterUneVoitureToolStripMenuItem1
@@ -139,7 +143,7 @@
             this.louerUneVoitureToolStripMenuItem,
             this.rendreUneVoitureToolStripMenuItem});
             this.locationsToolStripMenuItem.Name = "locationsToolStripMenuItem";
-            this.locationsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.locationsToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.locationsToolStripMenuItem.Text = "Locations";
             // 
             // louerUneVoitureToolStripMenuItem
@@ -189,6 +193,20 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // importerToolStripMenuItem
+            // 
+            this.importerToolStripMenuItem.Name = "importerToolStripMenuItem";
+            this.importerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.importerToolStripMenuItem.Text = "Importer";
+            this.importerToolStripMenuItem.Click += new System.EventHandler(this.importerToolStripMenuItem_Click);
+            // 
+            // exporterToolStripMenuItem
+            // 
+            this.exporterToolStripMenuItem.Name = "exporterToolStripMenuItem";
+            this.exporterToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exporterToolStripMenuItem.Text = "Exporter";
+            this.exporterToolStripMenuItem.Click += new System.EventHandler(this.exporterToolStripMenuItem_Click);
+            // 
             // FrmAccueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,5 +244,7 @@
         private System.Windows.Forms.ToolStripMenuItem locationsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem louerUneVoitureToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rendreUneVoitureToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem importerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exporterToolStripMenuItem;
     }
 }

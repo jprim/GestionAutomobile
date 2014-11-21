@@ -19,7 +19,7 @@ namespace presentation.Forms
 
         private void btn_SupprPers_Close_Click(object sender, EventArgs e)
         {
-            this.close();
+            this.Close();
         }
     }
 }

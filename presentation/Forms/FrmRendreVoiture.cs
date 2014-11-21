@@ -24,7 +24,7 @@ namespace presentation.Forms
 
         private void btn_rendre_fermer_Click(object sender, EventArgs e)
         {
-            this.Close
+            this.Close();
         }
 
    

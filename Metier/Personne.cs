@@ -1,10 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Xml.Serialization;
-using System.Runtime.Serialization.Json;
 using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Metier
 {
@@ -62,5 +67,42 @@ namespace Metier
         }
 
         #endregion
+
+#region Sérialisation
+
+        public void Exporter(List<Personne>mesDonees)
+        {
+            String cheminComplet = "";
+            String nomFichier = "";
+
+
+                cheminComplet = "M:\\GestionAutomobile";
+
+                FileStream unFlux =null;
+                BinaryFormatter fs;
+
+                try
+                {
+                    Directory.SetCurrentDirectory(cheminComplet);
+
+                    unFlux =new FileStream(nomFichier,FileMode.Create);
+
+                    //On formate le flux en binaire
+                    fs =new BinaryFormatter();
+
+                    fs.Serialize(unFlux, mesDonees);
+                  
+                }
+
+                finally
+                {
+                    unFlux.Close();
+                }
+            }
+        }
+
+
+
+#endregion
     }
 }

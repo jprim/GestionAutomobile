@@ -118,6 +118,7 @@
             this.btn_ajoutPersonne_ajouter.TabIndex = 8;
             this.btn_ajoutPersonne_ajouter.Text = "Ajouter";
             this.btn_ajoutPersonne_ajouter.UseVisualStyleBackColor = true;
+            this.btn_ajoutPersonne_ajouter.Click += new System.EventHandler(this.btn_ajoutPersonne_ajouter_Click);
             // 
             // FrmAjouterPersonne
             // 

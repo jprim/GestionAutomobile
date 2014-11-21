@@ -26,5 +26,10 @@ namespace presentation.Forms
         {
             this.Close();
         }
+
+        private void btn_ajoutPersonne_ajouter_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

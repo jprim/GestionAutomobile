@@ -44,3 +44,5 @@ M:\GestionAutomobile\presentation\obj\Debug\presentation.Forms.FrmConsulterPerso
 M:\GestionAutomobile\presentation\obj\Debug\presentation.Forms.FrmConsulterVoitures.resources
 M:\GestionAutomobile\presentation\obj\Debug\presentation.Forms.FrmLouerVoiture.resources
 M:\GestionAutomobile\presentation\obj\Debug\presentation.Forms.FrmRendreVoiture.resources
+M:\GestionAutomobile\presentation\obj\Debug\presentation.Forms.FrmSupprimerPersonne.resources
+M:\GestionAutomobile\presentation\obj\Debug\presentation.Forms.FrmSupprimerVoiture.resources

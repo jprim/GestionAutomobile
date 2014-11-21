@@ -149,6 +149,16 @@
   <ItemGroup>
     <Folder Include="Ressources\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Metier\Metier.csproj">
+      <Project>{92265303-4f7d-43ce-a75e-e3eea2958491}</Project>
+      <Name>Metier</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilitaire\Utilitaire.csproj">
+      <Project>{47038c89-3b3c-405f-90ce-7eafc5f4237e}</Project>
+      <Name>Utilitaire</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
