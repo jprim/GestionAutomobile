@@ -44,6 +44,7 @@
             this.btn_affichePersonnes_fermer.TabIndex = 13;
             this.btn_affichePersonnes_fermer.Text = "Fermer";
             this.btn_affichePersonnes_fermer.UseVisualStyleBackColor = true;
+            this.btn_affichePersonnes_fermer.Click += new System.EventHandler(this.btn_affichePersonnes_fermer_Click);
             // 
             // dgv_affichagePersonnes
             // 

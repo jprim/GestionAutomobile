@@ -16,5 +16,10 @@ namespace presentation.Forms
         {
             InitializeComponent();
         }
+
+        private void btn_ajoutVoiture_fermer_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

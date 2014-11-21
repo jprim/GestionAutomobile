@@ -56,6 +56,7 @@
             this.btn_ajoutVoiture_fermer.TabIndex = 16;
             this.btn_ajoutVoiture_fermer.Text = "Fermer";
             this.btn_ajoutVoiture_fermer.UseVisualStyleBackColor = true;
+            this.btn_ajoutVoiture_fermer.Click += new System.EventHandler(this.btn_ajoutVoiture_fermer_Click);
             // 
             // tbx_ajouttbx_ajoutVoiture_annee
             // 

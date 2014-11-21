@@ -54,6 +54,7 @@
             this.btn_louer_fermer.TabIndex = 18;
             this.btn_louer_fermer.Text = "Fermer";
             this.btn_louer_fermer.UseVisualStyleBackColor = true;
+            this.btn_louer_fermer.Click += new System.EventHandler(this.btn_louer_fermer_Click);
             // 
             // lbl_ajoutPersonne_titre
             // 

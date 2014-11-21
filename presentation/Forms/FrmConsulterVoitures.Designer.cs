@@ -104,6 +104,7 @@
             this.btn_afficheVoiture_fermer.TabIndex = 6;
             this.btn_afficheVoiture_fermer.Text = "Fermer";
             this.btn_afficheVoiture_fermer.UseVisualStyleBackColor = true;
+            this.btn_afficheVoiture_fermer.Click += new System.EventHandler(this.btn_afficheVoiture_fermer_Click);
             // 
             // FrmConsulterVoitures
             // 

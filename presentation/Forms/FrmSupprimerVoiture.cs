@@ -16,5 +16,10 @@ namespace presentation.Forms
         {
             InitializeComponent();
         }
+
+        private void btn_SupprVoit_Fermer_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

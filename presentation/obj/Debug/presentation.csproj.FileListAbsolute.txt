@@ -36,3 +36,11 @@ M:\mcuer\GestionAutomobile\presentation\obj\Debug\presentation.exe
 M:\mcuer\GestionAutomobile\presentation\obj\Debug\presentation.pdb
 M:\mcuer\GestionAutomobilev2\presentation\obj\Debug\presentation.exe
 M:\mcuer\GestionAutomobilev2\presentation\obj\Debug\presentation.pdb
+M:\GestionAutomobile\presentation\bin\Debug\presentation.exe
+M:\GestionAutomobile\presentation\bin\Debug\presentation.pdb
+M:\GestionAutomobile\presentation\obj\Debug\presentation.Forms.FrmAjouterPersonne.resources
+M:\GestionAutomobile\presentation\obj\Debug\presentation.Forms.FrmAjouterVoiture.resources
+M:\GestionAutomobile\presentation\obj\Debug\presentation.Forms.FrmConsulterPersonnes.resources
+M:\GestionAutomobile\presentation\obj\Debug\presentation.Forms.FrmConsulterVoitures.resources
+M:\GestionAutomobile\presentation\obj\Debug\presentation.Forms.FrmLouerVoiture.resources
+M:\GestionAutomobile\presentation\obj\Debug\presentation.Forms.FrmRendreVoiture.resources

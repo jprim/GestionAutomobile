@@ -16,5 +16,10 @@ namespace presentation.Forms
         {
             InitializeComponent();
         }
+
+        private void btn_SupprPers_Close_Click(object sender, EventArgs e)
+        {
+            this.close();
+        }
     }
 }

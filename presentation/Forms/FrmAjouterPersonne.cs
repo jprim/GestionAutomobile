@@ -21,5 +21,10 @@ namespace presentation.Forms
         {
 
         }
+
+        private void btn_ajoutPersonne_fermer_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

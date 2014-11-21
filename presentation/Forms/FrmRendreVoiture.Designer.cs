@@ -80,6 +80,7 @@
             this.btn_rendre_fermer.TabIndex = 25;
             this.btn_rendre_fermer.Text = "Fermer";
             this.btn_rendre_fermer.UseVisualStyleBackColor = true;
+            this.btn_rendre_fermer.Click += new System.EventHandler(this.btn_rendre_fermer_Click);
             // 
             // FrmRendreVoiture
             // 

@@ -39,13 +39,13 @@
             this.personnesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterUneVoitureToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.supprimerUneVoitureToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.locationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.louerUneVoitureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rendreUneVoitureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toutesLesVoituresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toutesLesPersonnesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.locationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.louerUneVoitureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rendreUneVoitureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -73,7 +73,7 @@
             // quitterToolStripMenuItem
             // 
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.quitterToolStripMenuItem.Text = "Quitter";
             this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
@@ -133,6 +133,29 @@
             this.supprimerUneVoitureToolStripMenuItem1.Text = "Supprimer une personne";
             this.supprimerUneVoitureToolStripMenuItem1.Click += new System.EventHandler(this.supprimerUneVoitureToolStripMenuItem1_Click);
             // 
+            // locationsToolStripMenuItem
+            // 
+            this.locationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.louerUneVoitureToolStripMenuItem,
+            this.rendreUneVoitureToolStripMenuItem});
+            this.locationsToolStripMenuItem.Name = "locationsToolStripMenuItem";
+            this.locationsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.locationsToolStripMenuItem.Text = "Locations";
+            // 
+            // louerUneVoitureToolStripMenuItem
+            // 
+            this.louerUneVoitureToolStripMenuItem.Name = "louerUneVoitureToolStripMenuItem";
+            this.louerUneVoitureToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.louerUneVoitureToolStripMenuItem.Text = "Louer une voiture";
+            this.louerUneVoitureToolStripMenuItem.Click += new System.EventHandler(this.louerUneVoitureToolStripMenuItem_Click);
+            // 
+            // rendreUneVoitureToolStripMenuItem
+            // 
+            this.rendreUneVoitureToolStripMenuItem.Name = "rendreUneVoitureToolStripMenuItem";
+            this.rendreUneVoitureToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.rendreUneVoitureToolStripMenuItem.Text = "Rendre une voiture";
+            this.rendreUneVoitureToolStripMenuItem.Click += new System.EventHandler(this.rendreUneVoitureToolStripMenuItem_Click);
+            // 
             // consultationToolStripMenuItem
             // 
             this.consultationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -159,34 +182,12 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(-10, 27);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(719, 275);
+            this.pictureBox1.Size = new System.Drawing.Size(763, 300);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // locationsToolStripMenuItem
-            // 
-            this.locationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.louerUneVoitureToolStripMenuItem,
-            this.rendreUneVoitureToolStripMenuItem});
-            this.locationsToolStripMenuItem.Name = "locationsToolStripMenuItem";
-            this.locationsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.locationsToolStripMenuItem.Text = "Locations";
-            // 
-            // louerUneVoitureToolStripMenuItem
-            // 
-            this.louerUneVoitureToolStripMenuItem.Name = "louerUneVoitureToolStripMenuItem";
-            this.louerUneVoitureToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
-            this.louerUneVoitureToolStripMenuItem.Text = "Louer une voiture";
-            this.louerUneVoitureToolStripMenuItem.Click += new System.EventHandler(this.louerUneVoitureToolStripMenuItem_Click);
-            // 
-            // rendreUneVoitureToolStripMenuItem
-            // 
-            this.rendreUneVoitureToolStripMenuItem.Name = "rendreUneVoitureToolStripMenuItem";
-            this.rendreUneVoitureToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
-            this.rendreUneVoitureToolStripMenuItem.Text = "Rendre une voiture";
-            this.rendreUneVoitureToolStripMenuItem.Click += new System.EventHandler(this.rendreUneVoitureToolStripMenuItem_Click);
             // 
             // FrmAccueil
             // 

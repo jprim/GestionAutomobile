@@ -108,6 +108,7 @@
             this.btn_ajoutPersonne_fermer.TabIndex = 7;
             this.btn_ajoutPersonne_fermer.Text = "Fermer";
             this.btn_ajoutPersonne_fermer.UseVisualStyleBackColor = true;
+            this.btn_ajoutPersonne_fermer.Click += new System.EventHandler(this.btn_ajoutPersonne_fermer_Click);
             // 
             // btn_ajoutPersonne_ajouter
             // 
