@@ -7,3 +7,8 @@ M:\mcuer\GestionAutomobile\Utilitaire\bin\Debug\Utilitaire.pdb
 M:\mcuer\GestionAutomobile\Utilitaire\obj\Debug\Utilitaire.dll
 M:\mcuer\GestionAutomobile\Utilitaire\obj\Debug\Utilitaire.pdb
 M:\GestionAutomobile\Utilitaire\obj\Debug\Utilitaire.csprojResolveAssemblyReference.cache
+E:\GestionAutomobile\Utilitaire\bin\Debug\Utilitaire.dll
+E:\GestionAutomobile\Utilitaire\bin\Debug\Utilitaire.pdb
+E:\GestionAutomobile\Utilitaire\obj\Debug\Utilitaire.csprojResolveAssemblyReference.cache
+E:\GestionAutomobile\Utilitaire\obj\Debug\Utilitaire.dll
+E:\GestionAutomobile\Utilitaire\obj\Debug\Utilitaire.pdb

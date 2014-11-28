@@ -47,6 +47,7 @@
             this.btn_ajoutVoiture.TabIndex = 17;
             this.btn_ajoutVoiture.Text = "Ajouter";
             this.btn_ajoutVoiture.UseVisualStyleBackColor = true;
+            this.btn_ajoutVoiture.Click += new System.EventHandler(this.btn_ajoutVoiture_Click);
             // 
             // btn_ajoutVoiture_fermer
             // 

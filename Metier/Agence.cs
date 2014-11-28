@@ -15,7 +15,7 @@ namespace Metier
     [DataContract]
     [Serializable]
     [XmlRoot("Agence", Namespace = "", IsNullable = false)]
-    class Agence
+    public class Agence
     {
         #region Attributs
         private string nom;

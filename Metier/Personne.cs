@@ -16,7 +16,7 @@ namespace Metier
     [DataContract]
     [Serializable]
     [XmlRoot("Personne", Namespace = "", IsNullable = false)]
-    class Personne
+    public class Personne
     {
         #region Attribut
         private String nom;
@@ -68,41 +68,57 @@ namespace Metier
 
         #endregion
 
-#region Sérialisation
 
-        public void Exporter(List<Personne>mesDonees)
+        public void Exporter(List<Personne> mesDonnees)
         {
             String cheminComplet = "";
-            String nomFichier = "";
+            String nomFichier = "Base.ci";
 
 
-                cheminComplet = "M:\\GestionAutomobile";
+            cheminComplet = Environment.CurrentDirectory;
 
-                FileStream unFlux =null;
-                BinaryFormatter fs;
+            FileStream unFlux = null;
+            BinaryFormatter fs;
 
-                try
-                {
-                    Directory.SetCurrentDirectory(cheminComplet);
 
-                    unFlux =new FileStream(nomFichier,FileMode.Create);
+            Directory.SetCurrentDirectory(cheminComplet);
 
-                    //On formate le flux en binaire
-                    fs =new BinaryFormatter();
+            unFlux = new FileStream(nomFichier, FileMode.Create);
 
-                    fs.Serialize(unFlux, mesDonees);
-                  
-                }
+            //On formate le flux en binaire
+            fs = new BinaryFormatter();
 
-                finally
-                {
-                    unFlux.Close();
-                }
-            }
+            fs.Serialize(unFlux, mesDonnees);
+
+
+            unFlux.Close();
+
         }
 
+        public List<Personne> Importer()
+        {
+            List<Personne> mesDonnees = null;
+            String cheminComplet = "";
+            String nomFichier = "Base.ci";
 
+            //On récupère le chemin complet, le nom du fichier et le chemin du dossier contenant le fichier à charger
+            cheminComplet = Environment.CurrentDirectory;
+            FileStream unFlux = null;
+            BinaryFormatter fs;
 
-#endregion
+            //On ouvre  un flux binaire
+            Directory.SetCurrentDirectory(cheminComplet);
+            unFlux = new FileStream(nomFichier, FileMode.Open);
+            //On formate le flux en binaire
+            fs = new BinaryFormatter();
+            //On vide la collection avant de récupérer le contenu désérialiser
+            //unePersonne.Clear();
+            mesDonnees = (List<Personne>)fs.Deserialize(unFlux);
+
+            unFlux.Close();
+            return mesDonnees;
+        }
     }
+
 }
+

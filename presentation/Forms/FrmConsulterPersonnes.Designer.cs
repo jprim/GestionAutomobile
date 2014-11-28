@@ -33,6 +33,7 @@
             this.lbx_affichagePersonne_trier = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_consultationPersonne_titre = new System.Windows.Forms.Label();
+            this.btn_visualiser_personne = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_affichagePersonnes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,11 +85,22 @@
             this.lbl_consultationPersonne_titre.TabIndex = 7;
             this.lbl_consultationPersonne_titre.Text = "Affichage des personnes";
             // 
+            // btn_visualiser_personne
+            // 
+            this.btn_visualiser_personne.Location = new System.Drawing.Point(148, 397);
+            this.btn_visualiser_personne.Name = "btn_visualiser_personne";
+            this.btn_visualiser_personne.Size = new System.Drawing.Size(113, 30);
+            this.btn_visualiser_personne.TabIndex = 14;
+            this.btn_visualiser_personne.Text = "Visualiser";
+            this.btn_visualiser_personne.UseVisualStyleBackColor = true;
+            this.btn_visualiser_personne.Click += new System.EventHandler(this.btn_visualiser_personne_Click);
+            // 
             // FrmConsulterPersonnes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(647, 455);
+            this.Controls.Add(this.btn_visualiser_personne);
             this.Controls.Add(this.btn_affichePersonnes_fermer);
             this.Controls.Add(this.dgv_affichagePersonnes);
             this.Controls.Add(this.lbx_affichagePersonne_trier);
@@ -109,5 +121,6 @@
         private System.Windows.Forms.ListBox lbx_affichagePersonne_trier;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl_consultationPersonne_titre;
+        private System.Windows.Forms.Button btn_visualiser_personne;
     }
 }

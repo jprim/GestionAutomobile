@@ -35,6 +35,7 @@
             this.lbx_affichageVoiture_trier = new System.Windows.Forms.ListBox();
             this.dgv_affichageVoiture = new System.Windows.Forms.DataGridView();
             this.btn_afficheVoiture_fermer = new System.Windows.Forms.Button();
+            this.btn_visiualiser_voiture = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_affichageVoiture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,12 +107,23 @@
             this.btn_afficheVoiture_fermer.UseVisualStyleBackColor = true;
             this.btn_afficheVoiture_fermer.Click += new System.EventHandler(this.btn_afficheVoiture_fermer_Click);
             // 
+            // btn_visiualiser_voiture
+            // 
+            this.btn_visiualiser_voiture.Location = new System.Drawing.Point(141, 395);
+            this.btn_visiualiser_voiture.Name = "btn_visiualiser_voiture";
+            this.btn_visiualiser_voiture.Size = new System.Drawing.Size(127, 30);
+            this.btn_visiualiser_voiture.TabIndex = 7;
+            this.btn_visiualiser_voiture.Text = "Visualiser";
+            this.btn_visiualiser_voiture.UseVisualStyleBackColor = true;
+            this.btn_visiualiser_voiture.Click += new System.EventHandler(this.btn_visiualiser_voiture_Click);
+            // 
             // FrmConsulterVoitures
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(711, 449);
+            this.Controls.Add(this.btn_visiualiser_voiture);
             this.Controls.Add(this.btn_afficheVoiture_fermer);
             this.Controls.Add(this.dgv_affichageVoiture);
             this.Controls.Add(this.lbx_affichageVoiture_trier);
@@ -136,5 +148,6 @@
         private System.Windows.Forms.ListBox lbx_affichageVoiture_trier;
         private System.Windows.Forms.DataGridView dgv_affichageVoiture;
         private System.Windows.Forms.Button btn_afficheVoiture_fermer;
+        private System.Windows.Forms.Button btn_visiualiser_voiture;
     }
 }

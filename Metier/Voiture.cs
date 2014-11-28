@@ -1,10 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Xml.Serialization;
-using System.Runtime.Serialization.Json;
 using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Metier
 {
@@ -14,7 +19,7 @@ namespace Metier
     [DataContract]
     [Serializable]
     [XmlRoot("Voiture", Namespace = "", IsNullable = false)]
-    class Voiture
+    public class Voiture
     {
         #region Attributs
         private string categorie;    
@@ -27,9 +32,9 @@ namespace Metier
 
         private string loueur;
 
-        private string nom;
+        private string marque;
 
-        private int puissance;
+
 
         #endregion
         #region Getters And Setters
@@ -72,16 +77,10 @@ namespace Metier
         [XmlElement("Nom")]
         public string Nom
         {
-            get { return nom; }
-            set { nom = value; }
+            get { return marque; }
+            set { marque = value; }
         }
-        [DataMember]
-        [XmlElement("Puissance")]
-        public int Puissance
-        {
-            get { return puissance; }
-            set { puissance = value; }
-        }
+        
 
         #endregion
 
@@ -102,9 +101,9 @@ namespace Metier
         /// <param name="louee"></param>
         /// <param name="immat"></param>
         /// <param name="loueur"></param>
-        /// <param name="nom"></param>
+        /// <param name="marque"></param>
         /// <param name="puissance"></param>
-        public  Voiture(string uneCate, string uneDate, bool louee, string immat, string loueur, string nom, int puissance)
+        public  Voiture(string uneCate, string uneDate, bool louee, string immat, string loueur, string marq)
 
         {
             this.categorie = uneCate;
@@ -112,8 +111,8 @@ namespace Metier
             this.estLouee = louee;
             this.immatriculation = immat;
             this.loueur = loueur;
-            this.nom = nom;
-            this.puissance = puissance;
+            this.marque = marq;
+
 
         }
 
@@ -125,17 +124,64 @@ namespace Metier
         /// <param name="louee"></param>
         /// <param name="immat"></param>
         /// <param name="puissance"></param>
-        public  Voiture(string uneCate, string uneDate, bool louee, string immat, int puissance)
+        public  Voiture(string uneCate, string uneDate, string immat)
         {
             this.categorie = uneCate;
             this.dateMiseService = uneDate;
-            this.estLouee = louee;
             this.immatriculation = immat;
-            this.puissance = puissance;
 
         }
 
         #endregion
+
+        public void Exporter(List<Voiture> mesDonnees)
+        {
+            String cheminComplet = "";
+            String nomFichier = "Base.ci";
+
+
+            cheminComplet = Environment.CurrentDirectory;
+
+            FileStream unFlux = null;
+            BinaryFormatter fs;
+
+
+            Directory.SetCurrentDirectory(cheminComplet);
+
+            unFlux = new FileStream(nomFichier, FileMode.Create);
+
+            //On formate le flux en binaire
+            fs = new BinaryFormatter();
+
+            fs.Serialize(unFlux, mesDonnees);
+
+
+            unFlux.Close();
+
+        }
+
+        public List<Voiture> Importer()
+        {
+            List<Voiture> mesDonnees = null;
+            String cheminComplet = "";
+            String nomFichier = "Base.ci";
+
+            //On récupère le chemin complet, le nom du fichier et le chemin du dossier contenant le fichier à charger
+            cheminComplet = Environment.CurrentDirectory;
+            FileStream unFlux = null;
+            BinaryFormatter fs;
+
+            
+            Directory.SetCurrentDirectory(cheminComplet);
+            unFlux = new FileStream(nomFichier, FileMode.Open);
+            
+            fs = new BinaryFormatter();
+            
+            mesDonnees = (List<Voiture>)fs.Deserialize(unFlux);
+
+            unFlux.Close();
+            return mesDonnees;
+        }
 
     }
 }
